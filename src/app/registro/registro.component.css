@@ -1,0 +1,100 @@
+.button {    
+     background-color: #4CAF5F;
+     font-family:courier,arial,helvética; 
+         border-radius: 5px; 
+         border: none;  
+        color: white;   
+        padding: 15px 32px;  
+        text-align: center;   
+        text-decoration: none;   
+        display: inline-block;   
+        font-size: 16px;  
+        }  
+  input,select {     
+      width: 30%;
+      font-family:courier,arial,helvética;
+      border-radius: 7px;
+      border-color:#adb1b4;        
+      padding: 10px 20px;   
+      margin: 6px 0;  
+      box-sizing: border-box;  
+      font-size: 2vw;
+      }
+                 label{     
+                   padding: 10px 20px;
+                   font-family:courier,arial,helvética;
+                   font-size: 1.7vw;
+                   vertical-align: center;
+                   }  
+                  .header {  
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 25px;
+                    font-family:courier,arial,helvética;
+                        width: 80%; 
+                        padding: 40px;   
+                          text-align: center;   
+                          background: rgb(35,27,159);
+                          background: linear-gradient(180deg, rgba(35,27,159,1) 0%, rgba(12,12,82,1) 35%, rgba(2,9,18,1) 100%);  
+                              color: white;    
+                               font-size: 20px; 
+ 
+  }
+
+  .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .nombre{
+  width: 30%;
+  float: left;
+   display: inline-block;
+  } 
+
+  .dui{
+    width: 30%;
+    float: left;
+  }
+
+  .producto{
+    
+    width: 30%;
+    float: left;
+  }
+
+  .visitas{
+  
+    width: 30%; 
+    float: left;
+  }
+
+  .tabla{
+    width: 60%;
+    font-size: 20px;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th{
+    border-radius: 5px;
+    font-family:courier,arial,helvética;
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+    text-align: center;
+  }
+
+  tr{
+    border-radius: 5px;
+    font-family:courier,arial,helvética;
+    text-align: center;
+    vertical-align: center;
+
+  }
+
+  tr:hover{
+    background-color: #f5f5f5;
+  }

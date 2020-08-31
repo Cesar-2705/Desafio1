@@ -1,0 +1,70 @@
+<div class="header"> 
+
+    <h1>Ticket de Compra</h1> 
+    <p>Recepcion datos de cliente</p>
+ </div> 
+ <div class="container">
+
+  <div class="containernombre">
+    <div class="nombre">
+      <label>Nombre De Cliente:</label>
+    </div> 
+    <div class="containerinputnombre">
+      <input type="text" [(ngModel)]="nombre"> 
+    </div>  
+  </div> 
+  
+ <div class="containerdui">
+   <div class="dui">
+    <label>Dui:</label>
+  </div> 
+  <div class="containerinputdui">
+   <input type="text" [(ngModel)]="dui">
+  </div>  
+ </div>
+  
+  <div class="containerproducto">
+    <div class="producto">
+      <label>Producto:</label>
+    </div> 
+    <div class="containerinputproducto">
+      <select [(ngModel)]="cod">
+        <option value='pan' >Pan</option>
+        <option value='leche'>Leche</option>
+        <option value='queso'>Queso</option>
+        <option value='huevos'>Huevos</option>
+        <option value='frijoles'>Frijoles</option>
+      </select>
+    </div> 
+  </div>
+
+  <div class="containervisitas">
+    <div class="visitas">
+      <label>Numero de visitas:</label> 
+    </div> 
+    <div class="containerinputvisitas">
+      <input type="text" [(ngModel)]="visita">
+    </div> 
+  </div>
+   
+  <button class="button" (click)="ingresar()">Ingresar compra</button> 
+   <br/><br/> 
+   <div class="compra">
+     <table class="tabla" [hidden]="contador == 0"> 
+     <br>
+<thead> <tr><th>Visita</th> <th>Cliente</th> <th>Dui</th> <th>Producto</th><th>Descripcion</th><th>Precio($)</th> </tr> </thead>
+<tbody>    
+ <tr *ngFor="let tcliente of registro"> 
+     <td>{{tcliente.visita}}</td>     
+<td>{{tcliente.nombre}}</td>     
+  <td>{{tcliente.dui}}</td> 
+ <td>{{tcliente.cod}}</td>  
+<td>{{tcliente.descripcion}}</td>
+<td>{{tcliente.precio}}</td>  
+       </tr>  
+ </tbody> 
+ </table>
+   </div>
+   
+ </div>
+ 
